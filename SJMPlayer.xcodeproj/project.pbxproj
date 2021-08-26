@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5511D82D7D667F7CD9648DA3 /* Pods_SJMPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 516902A3D1317D0989163FEA /* Pods_SJMPlayer.framework */; };
 		FC74DDB926D4797F00C86D63 /* SJMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC74DDB826D4797F00C86D63 /* SJMPlayer.m */; };
 		FC74DDBA26D4797F00C86D63 /* SJMPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC74DDB726D4797F00C86D63 /* SJMPlayer.h */; };
+		FCB34FEE26D47E5400C4FDEA /* SJVideoList.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB34FEB26D47E5400C4FDEA /* SJVideoList.m */; };
+		FCB34FEF26D47E5400C4FDEA /* SJVideoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB34FED26D47E5400C4FDEA /* SJVideoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,9 +28,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		516902A3D1317D0989163FEA /* Pods_SJMPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SJMPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B61114FC2B58F262BCB89E4C /* Pods-SJMPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJMPlayer.debug.xcconfig"; path = "Target Support Files/Pods-SJMPlayer/Pods-SJMPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		E627922498B018C4DDE6CBBA /* Pods-SJMPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SJMPlayer.release.xcconfig"; path = "Target Support Files/Pods-SJMPlayer/Pods-SJMPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		FC74DDB426D4797F00C86D63 /* libSJMPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSJMPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC74DDB726D4797F00C86D63 /* SJMPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SJMPlayer.h; sourceTree = "<group>"; };
 		FC74DDB826D4797F00C86D63 /* SJMPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SJMPlayer.m; sourceTree = "<group>"; };
+		FCB34FE226D47CE500C4FDEA /* UZAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZAppDelegate.h; sourceTree = "<group>"; };
+		FCB34FE326D47CE500C4FDEA /* UZAppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZAppUtils.h; sourceTree = "<group>"; };
+		FCB34FE426D47CE500C4FDEA /* UIViewControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewControllerExtension.h; sourceTree = "<group>"; };
+		FCB34FE526D47CE500C4FDEA /* UZModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZModule.h; sourceTree = "<group>"; };
+		FCB34FE626D47CE500C4FDEA /* NSDictionaryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionaryUtils.h; sourceTree = "<group>"; };
+		FCB34FE726D47CE500C4FDEA /* UZURLTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UZURLTask.h; sourceTree = "<group>"; };
+		FCB34FEA26D47E5300C4FDEA /* SJVideoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJVideoItem.h; sourceTree = "<group>"; };
+		FCB34FEB26D47E5400C4FDEA /* SJVideoList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJVideoList.m; sourceTree = "<group>"; };
+		FCB34FEC26D47E5400C4FDEA /* SJVideoList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SJVideoList.h; sourceTree = "<group>"; };
+		FCB34FED26D47E5400C4FDEA /* SJVideoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SJVideoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5511D82D7D667F7CD9648DA3 /* Pods_SJMPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457D41A0EB47B0253EC1AC86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				516902A3D1317D0989163FEA /* Pods_SJMPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		861F2D72F4912898DFB3DB9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B61114FC2B58F262BCB89E4C /* Pods-SJMPlayer.debug.xcconfig */,
+				E627922498B018C4DDE6CBBA /* Pods-SJMPlayer.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC74DDAB26D4797F00C86D63 = {
 			isa = PBXGroup;
 			children = (
 				FC74DDB626D4797F00C86D63 /* SJMPlayer */,
 				FC74DDB526D4797F00C86D63 /* Products */,
+				861F2D72F4912898DFB3DB9F /* Pods */,
+				457D41A0EB47B0253EC1AC86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,10 +96,36 @@
 		FC74DDB626D4797F00C86D63 /* SJMPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				FCB34FE926D47D5000C4FDEA /* CacheSQLite3 */,
+				FCB34FE826D47CF500C4FDEA /* UZEngine */,
 				FC74DDB726D4797F00C86D63 /* SJMPlayer.h */,
 				FC74DDB826D4797F00C86D63 /* SJMPlayer.m */,
 			);
 			path = SJMPlayer;
+			sourceTree = "<group>";
+		};
+		FCB34FE826D47CF500C4FDEA /* UZEngine */ = {
+			isa = PBXGroup;
+			children = (
+				FCB34FE426D47CE500C4FDEA /* UIViewControllerExtension.h */,
+				FCB34FE226D47CE500C4FDEA /* UZAppDelegate.h */,
+				FCB34FE326D47CE500C4FDEA /* UZAppUtils.h */,
+				FCB34FE526D47CE500C4FDEA /* UZModule.h */,
+				FCB34FE726D47CE500C4FDEA /* UZURLTask.h */,
+				FCB34FE626D47CE500C4FDEA /* NSDictionaryUtils.h */,
+			);
+			path = UZEngine;
+			sourceTree = "<group>";
+		};
+		FCB34FE926D47D5000C4FDEA /* CacheSQLite3 */ = {
+			isa = PBXGroup;
+			children = (
+				FCB34FEA26D47E5300C4FDEA /* SJVideoItem.h */,
+				FCB34FED26D47E5400C4FDEA /* SJVideoItem.m */,
+				FCB34FEC26D47E5400C4FDEA /* SJVideoList.h */,
+				FCB34FEB26D47E5400C4FDEA /* SJVideoList.m */,
+			);
+			path = CacheSQLite3;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +135,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC74DDBD26D4797F00C86D63 /* Build configuration list for PBXNativeTarget "SJMPlayer" */;
 			buildPhases = (
+				D0DF24029540308699E5E323 /* [CP] Check Pods Manifest.lock */,
 				FC74DDB026D4797F00C86D63 /* Sources */,
 				FC74DDB126D4797F00C86D63 /* Frameworks */,
 				FC74DDB226D4797F00C86D63 /* CopyFiles */,
@@ -117,12 +180,39 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D0DF24029540308699E5E323 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SJMPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FC74DDB026D4797F00C86D63 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB34FEF26D47E5400C4FDEA /* SJVideoItem.m in Sources */,
 				FC74DDB926D4797F00C86D63 /* SJMPlayer.m in Sources */,
+				FCB34FEE26D47E5400C4FDEA /* SJVideoList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -233,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -243,6 +333,7 @@
 		};
 		FC74DDBE26D4797F00C86D63 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B61114FC2B58F262BCB89E4C /* Pods-SJMPlayer.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";
@@ -254,6 +345,7 @@
 		};
 		FC74DDBF26D4797F00C86D63 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E627922498B018C4DDE6CBBA /* Pods-SJMPlayer.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				OTHER_LDFLAGS = "-ObjC";

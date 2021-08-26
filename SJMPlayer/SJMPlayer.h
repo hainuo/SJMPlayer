@@ -6,7 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UZEngine/UZModule.h"
 
-@interface SJMPlayer : NSObject
+@interface SJMPlayer : UZModule
 
 @end
